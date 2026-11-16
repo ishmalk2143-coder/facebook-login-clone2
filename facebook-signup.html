@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get started on Facebook with a Meta account</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at 5% 20%, rgba(254, 215, 226, 0.4) 0%, transparent 40%),
+                  radial-gradient(circle at 95% 80%, rgba(219, 234, 254, 0.5) 0%, transparent 40%),
+                  #ffffff;
+      color: #1c1e21;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      color: #1c1e21;
+      text-decoration: none;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .meta-brand {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
+      color: #0064e0;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .meta-symbol {
+      font-size: 20px;
+      color: #0064e0;
+      line-height: 1;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #050505;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #65676b;
+      line-height: 1.4;
+      margin-bottom: 24px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #050505;
+      margin-bottom: 8px;
+    }
+
+    .info {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #65676b;
+      font-size: 10px;
+      color: #65676b;
+      font-weight: normal;
+    }
+
+    .input {
+      width: 100%;
+      padding: 13px 16px;
+      font-size: 15px;
+      border: 1px solid #ccd0d5;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .input:focus {
+      border-color: #0866ff;
+    }
+
+    .two-inputs {
+      display: flex;
+      gap: 12px;
+    }
+
+    .two-inputs .input {
+      flex: 1;
+    }
+
+    .select-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .select {
+      flex: 1;
+      padding: 13px 14px;
+      font-size: 15px;
+      border: 1px solid #ccd0d5;
+      border-radius: 10px;
+      background-color: #ffffff;
+      outline: none;
+    }
+
+    .sub-note {
+      font-size: 12px;
+      color: #65676b;
+      margin-top: 6px;
+      margin-bottom: 14px;
+    }
+
+    .sub-note a {
+      color: #0866ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sub-note a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-text {
+      font-size: 12px;
+      color: #65676b;
+      line-height: 1.45;
+      margin-top: 18px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .legal-text a {
+      color: #0866ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .legal-text a:hover {
+      text-decoration: underline;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 13px;
+      background-color: #0866ff;
+      color: #ffffff;
+      border: none;
+      border-radius: 24px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056e0;
+    }
+
+    .already-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #e4e6eb;
+      color: #050505;
+      border: none;
+      border-radius: 24px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .already-btn:hover {
+      background-color: #d8dadf;
+    }
+
+    @media (max-width: 480px) {
+      .two-inputs {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <a href="facebook.html" class="back-btn">&lt;</a>
+
+    <div class="meta-brand">
+      <span class="meta-symbol">∞</span>
+      <span>Meta</span>
+    </div>
+
+    <h1 class="title">Get started on Facebook with a Meta account</h1>
+    <p class="desc">A Meta Account lets you access multiple Meta technologies, such as Facebook, easily and securely.</p>
+
+    <form action="#" method="POST">
+      <div class="field">
+        <div class="label">Name</div>
+        <div class="two-inputs">
+          <input type="text" class="input" placeholder="First name" required>
+          <input type="text" class="input" placeholder="Surname" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">
+          <span>Date of birth</span>
+          <span class="info">?</span>
+        </div>
+        <div class="select-row">
+          <select class="select" required>
+            <option value="" disabled selected>Day</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>10</option><option>15</option><option>20</option><option>25</option><option>30</option>
+          </select>
+          <select class="select" required>
+            <option value="" disabled selected>Month</option>
+            <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
+            <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
+            <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+          </select>
+          <select class="select" required>
+            <option value="" disabled selected>Year</option>
+            <option>2008</option><option>2007</option><option>2006</option><option>2005</option>
+            <option>2004</option><option>2003</option><option>2002</option><option>2001</option>
+            <option>2000</option><option>1995</option><option>1990</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">
+          <span>Gender</span>
+          <span class="info">?</span>
+        </div>
+        <select class="select" style="width: 100%;" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Custom</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <div class="label">Mobile number or email address</div>
+        <input type="text" class="input" placeholder="Mobile number or email address" required>
+        <div class="sub-note">
+          You may receive notifications from us. <a href="#">Learn why we ask for your contact information</a>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">Password</div>
+        <input type="password" class="input" placeholder="Password" required>
+      </div>
+
+      <div class="legal-text">
+        <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+        <p>By tapping Submit, you agree to create an account and to Facebook's <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.</p>
+        <p>The <a href="#">Privacy Policy</a> describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalise and improve our products, including ads.</p>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+      <a href="facebook.html" class="already-btn">I already have an account</a>
+    </form>
+  </div>
+
+</body>
+</html>
